@@ -17,7 +17,7 @@ pip install numpy pandas matplotlib yfinance tensorflow sklearn
 Clone the Repo:
 git clone https://github.com/yourusername/stock-price-prediction.git
 
-Enter the folder
+Enter the folder:
 cd stock-price-prediction
 
 Run the file:
