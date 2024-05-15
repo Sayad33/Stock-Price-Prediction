@@ -205,30 +205,6 @@ print(f"Predicted NVDA closing price for the next day: {predicted_price[0][0]}")
 
 
 
-actual_prices = scaler.inverse_transform(Y_test.reshape(-1, 1))
-
-# Predict the scaled values
-predicted_scaled_prices = model.predict(X_test)
-
-# Inverse transform the predicted scaled prices to original prices
-predicted_prices = scaler.inverse_transform(predicted_scaled_prices)
-
-
-# import matplotlib.pyplot as plt
-
-# # Ensure that all arrays are flattened for plotting
-# actual_prices = actual_prices.flatten()
-# predicted_prices = predicted_prices.flatten()
-
-# # Generate a plot
-# plt.figure(figsize=(10, 6))
-# plt.plot(actual_prices, label='Actual NVDA Closing Price')
-# plt.plot(predicted_prices, label='Predicted NVDA Closing Price', alpha=0.7)
-# plt.title('Comparison of Actual and Predicted NVDA Closing Prices')
-# plt.xlabel('Time (days)')
-# plt.ylabel('Price')
-# plt.legend()
-# plt.show()
 
 
 
